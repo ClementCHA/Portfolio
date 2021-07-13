@@ -1,0 +1,31 @@
+.header{
+  display: flex;
+  justify-content: flex-end;
+  
+
+  &-burger{
+    height: 3vh;
+    margin-right: 1.5em;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -80vh;
+  width: 25vw;
+  height: 100%;
+  background-color:#8e8e8e;
+  transition:  800ms ;
+  z-index: 21;
+  &-cross{
+    position:absolute;
+    width:1.5em;
+    right: 10px;
+    top: 10px;
+  }
+  
+}
+.sidebar.active {
+  left: 0;
+}
