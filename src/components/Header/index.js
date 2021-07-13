@@ -3,9 +3,10 @@ import burgerMenue from 'src/assets/menu.svg';
 import cross from 'src/assets/cancel.svg';
 import './style.scss';
 
-const Header = () => {
+export default function HeaderApp() {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
+
   return (
     <>
       <div className="header">
@@ -13,9 +14,8 @@ const Header = () => {
       </div>
       <nav className={sidebar ? 'sidebar active' : 'sidebar'}>
         <img src={cross} alt="cross" className="sidebar-cross" onClick={showSidebar} />
+        test
       </nav>
     </>
   );
-};
-
-export default Header;
+}
