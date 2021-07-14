@@ -18,6 +18,10 @@
     width: 1.5em;
     margin-left: 1vw;
   }
+  &-icon{
+    width: 1.5em;
+    margin-left: 1vw;
+  }
   &-typical{
     display: flex;
     justify-content: center;
@@ -31,5 +35,18 @@
     font-size: 0.8em;
     margin-top: 2em;
     text-align: center;
+  }
+  &-redirect{
+    display:flex;
+    justify-content: center;
+    margin-top: 2em;
+    text-align: center;
+  }
+  &-button{
+    display:flex;
+    padding: 1em;
+    font-size: 0.8em;
+    align-items: center;
+    cursor: pointer;
   }
 }

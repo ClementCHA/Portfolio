@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import burgerMenue from 'src/assets/menu.svg';
-import cross from 'src/assets/cancel.svg';
+import cross from 'src/assets/cross.svg';
 import './style.scss';
 
 export default function HeaderApp() {

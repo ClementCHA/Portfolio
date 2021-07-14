@@ -6,6 +6,7 @@ import {
 } from 'react-fullpage';
 import HeaderApp from '../Header';
 import Presentation from '../Presentation';
+import CV from '../Cv';
 
 import './styles.scss';
 
@@ -17,8 +18,6 @@ function App() {
     scrollBar: false,
     navigation: true,
     verticalAlign: false,
-    sectionPaddingTop: '50px',
-    sectionPaddingBottom: '50px',
     arrowNavigation: true,
   };
   return (
@@ -31,7 +30,7 @@ function App() {
           <Presentation />
         </Section>
         <Section>
-          Page 2
+          <CV />
         </Section>
         <Section>
           Page 3
