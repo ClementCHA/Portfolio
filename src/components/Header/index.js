@@ -14,7 +14,14 @@ export default function HeaderApp() {
       </div>
       <nav className={sidebar ? 'sidebar active' : 'sidebar'}>
         <img src={cross} alt="cross" className="sidebar-cross" onClick={showSidebar} />
-        test
+        <div className="listNav">
+          <ul onClick={showSidebar}>
+            <li> <a href="/">Accueil</a> </li>
+            <li> <a href="/#CV"> Mon CV</a></li>
+            <li> <a href="/#Portfolio"> Mon portoflio</a></li>
+            <li> <a href="/#Contact"> Me contacter</a></li>
+          </ul>
+        </div>
       </nav>
     </>
   );

@@ -32,3 +32,43 @@
 .sidebar.active {
   left: 0;
 }
+.sidebar ul {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+.sidebar li {
+  list-style: none;
+}
+.sidebar li {
+  font-size: 2.3vh;
+  text-decoration: none;
+  padding: 2vh;
+  display: block;
+  color: #1D120C;
+}
+
+.sidebar li::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #1D120C;
+  transition:  .5s;
+  margin-top: 1vh;
+}
+
+.sidebar li:hover::after{
+  width: 85%;
+  transition:  .5s;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.listNav{
+  display:flex;
+  justify-content: center;
+  margin-top: 30vh;
+  
+}
