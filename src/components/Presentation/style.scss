@@ -9,7 +9,7 @@
   &-name{
     display: flex;
     justify-content: center;
-    font-size: 0.9em;
+    font-size: 2vw;
   }
   &-nameP{
     align-self: center;
@@ -45,8 +45,11 @@
   &-button{
     display:flex;
     padding: 1em;
-    font-size: 0.8em;
+    font-size: 1.8vw;
     align-items: center;
     cursor: pointer;
+    :hover{
+      transform: scale(1.1);
+    }
   }
 }

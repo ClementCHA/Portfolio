@@ -1,0 +1,65 @@
+.contact{
+  height: 85vh;
+  margin-top: 4em;
+  &-me{
+    display:flex;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+    font-size: 2vw
+  }
+}
+
+.contactForm{
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+align-content: center;
+height: 100%;
+  &-input{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 0.8em;
+  }
+  &-message{
+    display:flex;
+    justify-content: center;
+    
+  }
+  &-textArea{
+    width: 80vw;
+    height: 30vh;
+  }
+  &-button{
+    margin-top: 2em;
+    font-family: inherit;
+    text-decoration: none;
+    border: 0.5px solid rgb(138, 138, 138);
+    background-color: white
+  }
+}
+.button{
+  display:flex;
+  justify-content: flex-end;
+}
+.form{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+.field{
+  width: 80%;
+  border: solid 2px #696969;
+  float:left; 
+  padding: 2em;
+  border-radius: 2px;
+}
+
+.input{
+  margin: 1em;
+  width: 40%;
+  text-align: center;
+  font-family: inherit;
+}

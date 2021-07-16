@@ -7,6 +7,7 @@ import {
 import HeaderApp from '../Header';
 import Presentation from '../Presentation';
 import CV from '../Cv';
+import ContactForm from '../Contact';
 
 import './styles.scss';
 
@@ -36,7 +37,7 @@ function App() {
           Page 3
         </Section>
         <Section>
-          Page 4
+          <ContactForm />
         </Section>
       </SectionsContainer>
     </div>
