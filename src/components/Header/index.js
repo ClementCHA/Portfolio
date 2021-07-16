@@ -1,6 +1,10 @@
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from 'react';
 import burgerMenue from 'src/assets/menu.svg';
 import cross from 'src/assets/cross.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './style.scss';
 
 export default function HeaderApp() {
@@ -21,6 +25,21 @@ export default function HeaderApp() {
             <li> <a href="/#Portfolio"> Mon portoflio</a></li>
             <li> <a href="/#Contact"> Me contacter</a></li>
           </ul>
+        </div>
+        <hr className="hr"></hr>
+        <div className="brandIcon">
+          <a href="https://www.linkedin.com/in/cl%C3%A9ment-charles-2b562a205/" target="_blank">
+            <FontAwesomeIcon
+              className="linkedin"
+              icon={faLinkedin}
+            />
+          </a>
+          <a href="https://github.com/ClementCHA" target="_blank">
+            <FontAwesomeIcon
+              className="github"
+              icon={faGithub}
+            />
+          </a>
         </div>
       </nav>
     </>
