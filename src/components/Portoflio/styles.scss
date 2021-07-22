@@ -1,0 +1,12 @@
+.portfolio{
+  margin-top: 4em;
+  height: 85vh;
+  &-title{
+  display: flex; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  justify-content: center;
+  font-size: 2vw;
+  }
+}

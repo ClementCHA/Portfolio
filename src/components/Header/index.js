@@ -22,7 +22,7 @@ export default function HeaderApp() {
           <ul onClick={showSidebar}>
             <li> <a href="/">Accueil</a> </li>
             <li> <a href="/#CV"> Mon CV</a></li>
-            <li> <a href="/#Portfolio"> Mon portoflio</a></li>
+            <li> <a href="/#Portfolio"> Mon portfolio</a></li>
             <li> <a href="/#Contact"> Me contacter</a></li>
           </ul>
         </div>

@@ -18,20 +18,48 @@
   
   
   &-education{
-    width:49vw
+    width:49vw;
+    max-height: 315px;
     
   }
   &-skills{
-    width:49vw
+    width:49vw;
+    max-height: 315px;
   
   }
   &-experience{
-    width:49vw
+    width:49vw;
+    max-height: 315px;
    
   }
   &-volontariat{
-    width:49vw
-   
+    width:49vw;
+    max-height: 315px;
+  }
+}
+
+@media (max-width: 375px), screen and (max-height:700px){
+  .figmaImport{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    overflow-x: scroll;
+    &-education{
+    width:100%
+    }
+    &-skills{
+      width:100%
+    
+    }
+    &-experience{
+      width:100%
+     
+    }
+    &-volontariat{
+      width:100%
+    }
   }
   
 }

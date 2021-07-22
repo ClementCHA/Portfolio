@@ -8,6 +8,7 @@ import HeaderApp from '../Header';
 import Presentation from '../Presentation';
 import CV from '../Cv';
 import ContactForm from '../Contact';
+import Portfolio from '../Portoflio';
 
 import './styles.scss';
 
@@ -34,7 +35,7 @@ function App() {
           <CV />
         </Section>
         <Section>
-          Page 3
+          <Portfolio />
         </Section>
         <Section>
           <ContactForm />

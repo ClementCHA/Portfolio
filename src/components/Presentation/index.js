@@ -23,7 +23,7 @@ const Presentation = () => {
         <div className="presentation-typical">
           <Typewriter
             options={{
-              strings: ['Je suis developpeur Web', 'Je suis developpeur Front-end', 'Je suis developpeur React'],
+              strings: ['Je suis développeur Web', 'Je suis développeur Front-end', 'Je suis développeur React'],
               autoStart: true,
               loop: true,
             }}
@@ -33,18 +33,24 @@ const Presentation = () => {
           Basé sur Nantes, disponible partout en France ou en remote
         </p>
         <div className="presentation-redirect">
-          <div className="presentation-button">
-            <a href="#CV"> Mon CV </a>
-            <img src={cv} alt="cv" className="presentation-icon" />
-          </div>
-          <div className="presentation-button">
-            <a href="#Portfolio"> Mon Portoflio </a>
-            <img src={portfolio} alt="portfolio" className="presentation-icon" />
-          </div>
-          <div className="presentation-button">
-            <a href="#Contact"> Me contacter </a>
-            <img src={crayon} alt="crayon" className="presentation-icon" />
-          </div>
+          <a href="#CV">
+            <div className="presentation-button">
+              <p>Mon CV</p>
+              <img src={cv} alt="cv" className="presentation-icon" />
+            </div>
+          </a>
+          <a href="#Portfolio">
+            <div className="presentation-button">
+              <p>Mon Portfolio</p>
+              <img src={portfolio} alt="portfolio" className="presentation-icon" />
+            </div>
+          </a>
+          <a href="#Contact">
+            <div className="presentation-button">
+              <p>Me contacter</p>
+              <img src={crayon} alt="crayon" className="presentation-icon" />
+            </div>
+          </a>
         </div>
       </div>
     </>
