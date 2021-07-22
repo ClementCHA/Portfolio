@@ -36,7 +36,7 @@ const contactEmail = nodemailer.createTransport({
     type: 'custom',
     method: 'MY-CUSTOM-METHOD',
     user: 'clement.charlesC@gmail.com',
-    pass: process.env.pass,
+    pass: process.env.PASS,
   },
 });
 
