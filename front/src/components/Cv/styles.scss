@@ -41,24 +41,25 @@
 @media (max-width: 375px), screen and (max-height:700px){
   .figmaImport{
     display: flex;
+    flex: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100%;
     overflow-x: scroll;
+    height: 100%;
     &-education{
-    width:100%
+    width:65%
     }
     &-skills{
-      width:100%
+      width:65%
     
     }
     &-experience{
-      width:100%
+      width:65%
      
     }
     &-volontariat{
-      width:100%
+      width:65%
     }
   }
   
