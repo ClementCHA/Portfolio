@@ -14,8 +14,8 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: -80vh;
-  width: 40%;
+  left: -30vw;
+  width: 30vw;
   height: 100%;
   background-color:#ffe5a4;
   transition:  800ms ;
@@ -28,6 +28,12 @@
     cursor: pointer;
   }
   
+}
+@media (max-width: 550px){
+  .sidebar{
+    left: -50%;
+    width: 50%;
+  }
 }
 .sidebar.active {
   left: 0;

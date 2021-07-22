@@ -38,12 +38,11 @@
   }
 }
 
-@media (max-width: 375px), screen and (max-height:700px){
+@media (max-width: 534px){
   .figmaImport{
     display: flex;
-    flex: wrap;
     flex-direction: column;
-    justify-content: center;
+   
     align-items: center;
     overflow-x: scroll;
     height: 100%;
@@ -52,7 +51,6 @@
     }
     &-skills{
       width:65%
-    
     }
     &-experience{
       width:65%
@@ -60,6 +58,181 @@
     }
     &-volontariat{
       width:65%
+    }
+  }
+  
+}
+
+@media (max-width: 356px){
+  .figmaImport{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    overflow-x: scroll;
+    height: 100%;
+    &-education{
+    width:60%
+    }
+    &-skills{
+      width:60%
+    }
+    &-experience{
+      width:60%
+     
+    }
+    &-volontariat{
+      width:60%
+    }
+  }
+  
+}
+
+@media (max-width: 390px){
+  .figmaImport{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    overflow-x: scroll;
+    height: 100%;
+    &-education{
+    width:55%
+    }
+    &-skills{
+      width:55%
+    }
+    &-experience{
+      width:55%
+     
+    }
+    &-volontariat{
+      width:55%
+    }
+  }
+  
+}
+
+@media (max-width: 430px){
+  .figmaImport{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    overflow-x: scroll;
+    height: 100%;
+    &-education{
+    width:50%
+    }
+    &-skills{
+      width:50%
+    }
+    &-experience{
+      width:50%
+     
+    }
+    &-volontariat{
+       width:50%
+    }
+  }
+  
+}
+
+@media (max-width: 489px){
+  .figmaImport{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    overflow-x: scroll;
+    height: 100%;
+    &-education{
+    width:45%
+    }
+    &-skills{
+      width:45%
+    }
+    &-experience{
+      width:45%
+     
+    }
+    &-volontariat{
+       width:45%
+    }
+  }
+  
+}
+
+@media (min-width: 490px){
+  .figmaImport{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    overflow-x: scroll;
+    height: 100%;
+    &-education{
+    width:40%
+    }
+    &-skills{
+      width:40%
+    }
+    &-experience{
+      width:40%
+     
+    }
+    &-volontariat{
+      width:40%
+    }
+  }
+  
+}
+
+@media (min-width: 600px){
+  .figmaImport{
+    display: flex;
+  flex-wrap: wrap;
+   
+    align-items: center;
+    overflow-x: scroll;
+    height: 100%;
+    &-education{
+    width:35%
+    }
+    &-skills{
+      width:35%
+    }
+    &-experience{
+      width:35%
+     
+    }
+    &-volontariat{
+      width:35%
+    }
+  }
+  
+}
+
+@media (min-width: 740px){
+  .figmaImport{
+    display: flex;
+  flex-wrap: wrap;
+   
+    align-items: center;
+    overflow-x: scroll;
+    height: 100%;
+    &-education{
+    width:30%
+    }
+    &-skills{
+      width:30%
+    }
+    &-experience{
+      width:30%
+     
+    }
+    &-volontariat{
+      width:30%
     }
   }
   
