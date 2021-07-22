@@ -28,12 +28,18 @@ app.use('/', router);
 app.listen(5000, () => console.log('Server Running'));
 
 const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'gmail.com',
+  port: 465,
+  secure: true,
+ 
   auth: {
+    type: 'custom',
+    method: 'MY-CUSTOM-METHOD',
     user: 'clement.charlesC@gmail.com',
     pass: process.env.pass,
   },
 });
+
 
 contactEmail.verify((error) => {
   if (error) {
