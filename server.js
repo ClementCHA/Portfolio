@@ -26,10 +26,10 @@ const contactEmail = nodemailer.createTransport({
   secure: true,
   auth: {
     type: 'OAuth2',
-    clientId: '585879763425-0fl98katsqvcfvqm88choik5cik0rka5.apps.googleusercontent.com',
-    clientSecret: '3grAuR8URlAWrfReN0B53Piw',
-    refreshToken: '1//04WL58Y3ffRXhCgYIARAAGAQSNwF-L9IrRDAKJFKdgLHbzvOqomSdWzGhe02VQQjYw3gHI_FnwmzsCL-c1DwmoTW6ExGe3xIrA9k',
-    accessToken: 'ya29.a0ARrdaM-Q_FRZP1SdSbLtaw3o3aoL0Dat0DGXr3EjjrD15_XbvDlX9YPQF4YPsQsbMHx4XmHLhOFWP44ho19HeDGN7LBgMj56wlZJn22on8mKh0KY9Sdcj9PuBvqH5yE0N2UcK8Fo5qUPSXVFwqO-F0_dZJ3m'
+    clientId:process.env.CLIENT_ID,
+    clientSecret:process.env.CLIENT_SECRET,
+    refreshToken:process.env.REFRESH_TOKEN,
+    accessToken:process.env.ACCESS_TOKEN,
   },
 });
 

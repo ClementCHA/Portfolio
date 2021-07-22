@@ -17,7 +17,6 @@ const ContactForm = () => {
     let response = await fetch('https://clementcharlesortfolio.herokuapp.com/contact', {
       method: 'POST',
       headers: {
-        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json;charset=utf-8',
       },
       body: JSON.stringify(details),
