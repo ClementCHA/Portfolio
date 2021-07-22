@@ -1,29 +1,29 @@
-/* eslint-disable no-sequences */
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useState }  from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import ContactField from './field';
 import './styles.scss';
 
 const ContactForm = () => {
+  const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("Sending...");
     const { name, email, message } = e.target.elements;
     const details = {
       name: name.value,
       email: email.value,
       message: message.value,
     };
-    await fetch('https://clementcharlesortfolio.herokuapp.com/contact', {
+    let response = await fetch('https://clementcharlesortfolio.herokuapp.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
       },
       body: JSON.stringify(details),
     })
-      .then(() => {
-        alert('Message envoyé');
-      });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
   };
   return (
     <>
